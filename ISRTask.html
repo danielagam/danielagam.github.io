@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./Scripts.js"></script>
+</head>
+
+<body>
+    <div style="display: flex;" onload="updatePage(document.getElementById('locationsGrid'))">
+        <div style="width: 75%;">
+            <h1>Map</h1>
+            <div id="map"></div>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAFko71oSpCRl8Y-AoqzRVsSz72meWwvM&callback=initMap&libraries=&v=weekly" async></script>
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+            <script src="./Scripts.js"></script>
+        </div>
+        <div>
+            <h2>Locations</h2>
+            <table id="locationsGrid">
+                <tr>
+                    <th>City</th>
+                    <th>Image</th>
+                    <th>Description</th>
+                </tr>
+                <tr id="Jerusalem">
+                    <td>Jerusalem</td>
+                    <td> <img src="./images/Jerusalem.jpg" height="70px" width="100px" /></td>
+                    <td>Holy city</td>
+                </tr>
+                <tr id="TelAviv">
+                    <td>Tel Aviv</td>
+                    <td><img src="./images/TelAviv.jpg" height="70px" width="100px" /></td>
+                    <td>Hi-tech city</td>
+                </tr>
+                <tr id="Tiberias">
+                    <td>Tiberias</td>
+                    <td><img src="./images/Tiberias.jpg" height="70px" width="100px" /> </td>
+                    <td>Rabi meir city</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
